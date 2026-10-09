@@ -1,6 +1,6 @@
-{% set version = "1.20.0" %}
+{% set version = "1.22.1" %}
 {% set name = "MSstatsConvert" %}
-{% set bioc = "3.22" %}
+{% set bioc = "3.23" %}
 
 package:
   name: bioconductor-{{ name|lower }}
@@ -12,10 +12,10 @@ source:
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
     - https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz
     - https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz
-  md5: 472e4f87202e9d7504c0483d20a4f1d6
+  md5: 4bba4134b770417042211a6b1bcc016a
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -31,7 +31,6 @@ requirements:
     - r-base
     - r-checkmate
     - r-data.table
-    - r-log4r
     - r-rcpp
     - r-stringi
     - libblas
@@ -42,7 +41,6 @@ requirements:
     - r-base
     - r-checkmate
     - r-data.table
-    - r-log4r
     - r-rcpp
     - r-stringi
 

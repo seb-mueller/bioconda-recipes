@@ -1,6 +1,6 @@
-{% set version = "1.88.0" %}
+{% set version = "1.90.0" %}
 {% set name = "marray" %}
-{% set bioc = "3.22" %}
+{% set bioc = "3.23" %}
 
 package:
   name: bioconductor-{{ name|lower }}
@@ -12,7 +12,7 @@ source:
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
     - https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz
     - https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz
-  md5: 2349218e34a737521c9fc3856cba8520
+  md5: d54ea7c96882d4d76feb1ab491531864
 
 build:
   number: 0
@@ -25,10 +25,10 @@ build:
 # Suggests: tkWidgets
 requirements:
   host:
-    - bioconductor-limma >=3.66.0,<3.67.0
+    - bioconductor-limma >=3.68.0,<3.69.0
     - r-base
   run:
-    - bioconductor-limma >=3.66.0,<3.67.0
+    - bioconductor-limma >=3.68.0,<3.69.0
     - r-base
 
 test:

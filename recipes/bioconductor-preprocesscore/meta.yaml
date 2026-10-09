@@ -1,6 +1,6 @@
-{% set version = "1.72.0" %}
+{% set version = "1.74.0" %}
 {% set name = "preprocessCore" %}
-{% set bioc = "3.22" %}
+{% set bioc = "3.23" %}
 
 package:
   name: bioconductor-{{ name|lower }}
@@ -12,7 +12,7 @@ source:
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
     - https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz
     - https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz
-  md5: c288c12d10a9a8b02904140e08aa97bd
+  md5: f7d48eb2367d5df5e980f93512a4e262
 
 build:
   number: 0

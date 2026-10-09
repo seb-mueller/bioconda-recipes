@@ -1,6 +1,6 @@
-{% set version = "4.18.1" %}
+{% set version = "4.20.0" %}
 {% set name = "MSstats" %}
-{% set bioc = "3.22" %}
+{% set bioc = "3.23" %}
 
 package:
   name: bioconductor-{{ name|lower }}
@@ -12,7 +12,7 @@ source:
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
     - https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz
     - https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz
-  md5: ff1a2ec71762310e27b57bc4e0beeaac
+  md5: 48d2663cb141681cd8b2c314282334c0
 
 build:
   number: 0
@@ -30,14 +30,14 @@ requirements:
     - make
 
   host:
-    - bioconductor-limma >=3.66.0,<3.67.0
-    - bioconductor-marray >=1.88.0,<1.89.0
-    - bioconductor-msstatsconvert >=1.20.0,<1.21.0
-    - bioconductor-preprocesscore >=1.72.0,<1.73.0
+    - bioconductor-limma >=3.68.0,<3.69.0
+    - bioconductor-marray >=1.90.0,<1.91.0
+    - bioconductor-msstatsconvert >=1.22.0,<1.23.0
+    - bioconductor-preprocesscore >=1.74.0,<1.75.0
     - r-base
     - r-checkmate
     - r-data.table
-    - r-ggplot2
+    - 'r-ggplot2 >=3.4.0'
     - r-ggrepel
     - r-gplots
     - r-htmltools
@@ -55,14 +55,14 @@ requirements:
     - liblzma-devel
 
   run:
-    - bioconductor-limma >=3.66.0,<3.67.0
-    - bioconductor-marray >=1.88.0,<1.89.0
-    - bioconductor-msstatsconvert >=1.20.0,<1.21.0
-    - bioconductor-preprocesscore >=1.72.0,<1.73.0
+    - bioconductor-limma >=3.68.0,<3.69.0
+    - bioconductor-marray >=1.90.0,<1.91.0
+    - bioconductor-msstatsconvert >=1.22.0,<1.23.0
+    - bioconductor-preprocesscore >=1.74.0,<1.75.0
     - r-base
     - r-checkmate
     - r-data.table
-    - r-ggplot2
+    - 'r-ggplot2 >=3.4.0'
     - r-ggrepel
     - r-gplots
     - r-htmltools
